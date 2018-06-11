@@ -11,8 +11,16 @@ authentication_result_template = {
     'role': fields.String(description='Role of user')
 }
 
+access_token_result_template = {
+    'accessToken': fields.String(description='Access token of user')
+}
+
 
 class AuthenticationResultDto:
     accessToken = None
     refreshToken = None
     role = None
+
+
+class AccessToeknResultDto:
+    accessToken = None
